@@ -44,7 +44,7 @@ def get_activity(username, password):
     	formElement = d.find_elements_by_css_selector(".normaltext_SIDE");
 
     	pswd = d.find_element_by_name('hintanswer');
-    	#pswd.send_keys('visnagar')
+    	#pswd.send_keys('')
     	time.sleep(3)
     	if (secretquestionkey[0] in formElement[0].get_attribute('innerHTML')):
     		pswd.send_keys(secretanswer[0])
